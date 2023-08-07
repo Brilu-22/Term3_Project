@@ -234,25 +234,25 @@ body{
   }
   /* //////////////////////////////////////// morning ///////*/
   #morning {
-    background-color: #42b9f4;
+    background-color: transparent;
   /*   height: 300px; */
   }
   
   /* //////////////////////////////////////// midday ///////*/
   #midday {
-    background-color: #32a2db;
+    background-color: transparent;
   }
   /* //////////////////////////////////////// afternoon ///////*/
   #afternoon {
-    background-color: #1e89bf;
+    background-color: transparent;
   }
   /* //////////////////////////////////////// evening ///////*/
   #evening {
-    background-color: #14659E;
+    background-color: transparent;
   }
   /* //////////////////////////////////////// nightday ///////*/
   #nightday {
-    background-color: #125482;
+    background-color: transparent;
   }
   
 
