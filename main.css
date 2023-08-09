@@ -28,6 +28,8 @@ body{
     background-attachment: fixed;
 }
 
+
+
 .align-self-center{
     width: 700px;
     height: 700px;
@@ -41,6 +43,25 @@ body{
     padding: 12px;
     margin-top: 20px;
     background: inherit;
+}
+
+.carousel-item {
+  background-color: transparent;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  top: auto;
+  right: auto;
+  left: 24px;
+  bottom: 24px;
+  width: auto;
+  background-color: black;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.carousel-control-next {
+  left: 84px;
 }
 
 .align-self-center::before{
@@ -58,7 +79,7 @@ body{
 
 .align-self-center,h1{
     text-align: center;
-    font-size: 280px;
+    font-size: 50px;
     margin-top: 50px;
     padding-bottom: -110px;
     color: #fff;
@@ -221,6 +242,18 @@ body{
     right: 1em;
     top: 4em;
   }
+
+
+.destinations{
+  height: 300px;
+  width: 300px;
+  background-color: #fff;
+}
+.destinations h2{
+  font-family: 'Italiana', serif;
+  color: red;
+}
+
   .text-wrapper p   {margin: 0; margin-left: auto;margin-top: -11px; }
   .degree           {font-size: 2.2em;}
   .degree sup       {font-size: 0.6em;}
