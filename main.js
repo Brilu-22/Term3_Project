@@ -44,7 +44,7 @@ const trips = [
   
   $(document).ready(function(){
   
-      console.log("Hello");
+      console.log("Welcome To ATLAS: Embarking on a mystical Journey");
   
       // -----------------------------------------
       // Home Page

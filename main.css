@@ -16,7 +16,7 @@ p{
 
 .nav-link{
     font-family: 'Italiana', serif;
-    color: white;
+    color: wheat;
     font-size: 20px;
 }
 
@@ -115,9 +115,15 @@ body{
   width: 400px;
   height: 300px;
   font-weight: bold;
-  color: whitesmoke;
+  color: wheat;
   margin-top: 200px;
   margin-left: -990px;
+}
+
+.line3{
+  width: 100px;
+  height: 2px;
+  background-color: #0b1612;
 }
 
 
@@ -282,107 +288,7 @@ body{
   }
 
 
-  .all{
-  height: 100px;
-  width: 820px;
-  background-color: transparent;
-  border-radius: 5%;
-  margin-top: 550px;
-  margin-left: 300px;
-  float: left;
-  border: 2px solid white;
-  }
-
-.destinations h3{
-  font-family: 'Italiana', serif;
-  color: red;
-  text-align: center;
-  padding: 5px;
-  font-size: 20px;
-  margin-left: -500px;
-  font-weight: bold;
-
-}
-
-.destinations p{
-  font-family: 'Italiana', serif;
-  color: red;
-  text-align: center;
-  padding: 5px;
-  font-size: 20px;
-  margin-left: -500px;
-}
-
-.guests h3{
-  font-family: 'Italiana', serif;
-  color: purple;
-  text-align: center;
-  padding: 5px;
-  font-size: 20px;
-  margin-left: 300px;
-  margin-top: -90px;
-  font-weight: bold;
-
-}
-
-.guests p{
-  font-family: 'Italiana', serif;
-  color: purple;
-  text-align: center;
-  padding: 5px;
-  font-size: 20px;
-  margin-left: 300px;
-
-}
-
-.dates h3{
-  font-family: 'Italiana', serif;
-  color: orangered;
-  text-align: center;
-  padding: 5px;
-  font-size: 20px;
-  margin-left: -100px;
-  margin-top: -97px;
-  font-weight: bold;
-}
-
-.dates p{
-  font-family: 'Italiana', serif;
-  color: orangered;
-  text-align: center;
-  padding: 5px;
-  font-size: 20px;
-  margin-left: -100px;
-  
-}
-
-.search{
-  width: 120px;
-  height: 50px;
-  background-color: black;
-  margin-left: 690px;
-  border-radius: 5%;
-}
-.search p{
-  margin-left: -10px;
-  margin-top: -80px;
-}
-
-.line1{
-  width: 2px;
-  height: 80px;
-  background-color: blueviolet;
-  margin-left: 260px;
-  margin-top: -70px;
-}
-
-.line2{
-  width: 2px;
-  height: 80px;
-  background-color: blueviolet;
-  margin-left: 450px;
-  margin-top: -78px;
-}
+ 
 
 .center{
   width: 500px;
@@ -410,7 +316,7 @@ button {
 .end{
   width: 500px;
   height: 500px;
-  margin-top: 300px;
+  margin-top: 200px;
   margin-left: 90px;
   background-image: url(assets/jakob-owens-5F_c9i3JP0I-unsplash.jpg);
   background-position: center;
