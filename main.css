@@ -8,8 +8,8 @@ h1,h2,h3,h4,h5,h6{
 
 p{
     font-family: 'Italiana', serif;
-    /*font-family: 'Anton', sans-serif;
-    font-family: 'Dancing Script', cursive;*/
+    /*font-family: 'Anton', sans-serif;*/
+    /*font-family: 'Dancing Script', cursive;*/
 }
 
 /* Fonts */
@@ -20,19 +20,34 @@ p{
     font-size: 20px;
 }
 
+.nav-link:hover {
+  color: #0b1612;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid #18382B;
+  color: #18382B;
+}
+
 body{
     height: 100%;
-    background-image: url(assets/nikldn-t-6GW8T6Jsc-unsplash.jpg);
+    background-image: url(assets/mohamed-masaau-nfF5-G6cFwY-unsplash.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
+.box{
+  background-image: url(assets/nathan-dumlao-OHzkfrv9Ycw-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 
 .align-self-center{
-    width: 700px;
-    height: 700px;
+    width: 800px;
+    height: 760px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
     position: relative;
     top: auto;
@@ -41,8 +56,9 @@ body{
     bottom: 24px;
     width: auto;
     padding: 12px;
-    margin-top: 20px;
+   
     background: inherit;
+    margin-left: -125px;
 }
 
 .carousel-item {
@@ -79,14 +95,31 @@ body{
 
 .align-self-center,h1{
     text-align: center;
-    font-size: 50px;
+    font-size: 200px;
     margin-top: 50px;
     padding-bottom: -110px;
     color: #fff;
     text-shadow: 0 5px 10px rgba(0, 0, 0, 1);
     mix-blend-mode: overlay;
     text-decoration: transparent;
+    margin-left: 100px;
 }
+
+.align-self-center,p{
+  font-size: 30px;
+  font-family: 'Italiana', serif;
+  color: black;
+}
+
+.press{
+  width: 400px;
+  height: 300px;
+  font-weight: bold;
+  color: whitesmoke;
+  margin-top: 200px;
+  margin-left: -990px;
+}
+
 
 .box {
     border-radius: 10px;
@@ -103,6 +136,11 @@ body{
     transform: translate(-50%,-50%);
     width: 350px;
     margin-left: 400px;
+  }
+
+  .box,p{
+    font-size: 20px;
+    color: white;
   }
   .box > div + div {
     box-shadow: inset 0px 5px 5px rgba(0,0,0,0.2);
@@ -244,14 +282,145 @@ body{
   }
 
 
-.destinations{
-  height: 300px;
-  width: 300px;
-  background-color: #fff;
-}
-.destinations h2{
+  .all{
+  height: 100px;
+  width: 820px;
+  background-color: transparent;
+  border-radius: 5%;
+  margin-top: 550px;
+  margin-left: 300px;
+  float: left;
+  border: 2px solid white;
+  }
+
+.destinations h3{
   font-family: 'Italiana', serif;
   color: red;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  margin-left: -500px;
+  font-weight: bold;
+
+}
+
+.destinations p{
+  font-family: 'Italiana', serif;
+  color: red;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  margin-left: -500px;
+}
+
+.guests h3{
+  font-family: 'Italiana', serif;
+  color: purple;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  margin-left: 300px;
+  margin-top: -90px;
+  font-weight: bold;
+
+}
+
+.guests p{
+  font-family: 'Italiana', serif;
+  color: purple;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  margin-left: 300px;
+
+}
+
+.dates h3{
+  font-family: 'Italiana', serif;
+  color: orangered;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  margin-left: -100px;
+  margin-top: -97px;
+  font-weight: bold;
+}
+
+.dates p{
+  font-family: 'Italiana', serif;
+  color: orangered;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  margin-left: -100px;
+  
+}
+
+.search{
+  width: 120px;
+  height: 50px;
+  background-color: black;
+  margin-left: 690px;
+  border-radius: 5%;
+}
+.search p{
+  margin-left: -10px;
+  margin-top: -80px;
+}
+
+.line1{
+  width: 2px;
+  height: 80px;
+  background-color: blueviolet;
+  margin-left: 260px;
+  margin-top: -70px;
+}
+
+.line2{
+  width: 2px;
+  height: 80px;
+  background-color: blueviolet;
+  margin-left: 450px;
+  margin-top: -78px;
+}
+
+.center{
+  width: 500px;
+  height: 800px;
+  background-color: rgba(0, 0, 0, .2);
+  margin-left: 100px;
+  
+}
+
+.center p{
+  margin-top: 200px;
+}
+
+button {
+  border: none;
+  padding: 16px 20px;
+  border-radius: 8px;
+  background: #18382B;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+
+.end{
+  width: 500px;
+  height: 500px;
+  margin-top: 300px;
+  margin-left: 90px;
+  background-image: url(assets/jakob-owens-5F_c9i3JP0I-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 25%;
+}
+
+
+.button{
+  margin-top: -900px;
 }
 
   .text-wrapper p   {margin: 0; margin-left: auto;margin-top: -11px; }
@@ -287,5 +456,5 @@ body{
   #nightday {
     background-color: transparent;
   }
-  
 
+  

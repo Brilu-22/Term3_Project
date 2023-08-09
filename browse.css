@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Italiana&display=swap');
+
+/* ---------------------------------------- */
+/* Global Styles */
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Italiana', serif;
+}
+
+p{
+    font-family: 'Italiana', serif;
+    /*font-family: 'Anton', sans-serif;*/
+    /*font-family: 'Dancing Script', cursive;*/
+}
+
+/* Fonts */
+
+.overlay{
+    height: auto;
+    width: 100%;
+    background-color:  rgba(0, 0, 0, .2);
+    background-attachment: fixed;
+}
+
+body{
+    height: 100%;
+    background-image: url(assets/nikldn-t-6GW8T6Jsc-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.trips{
+    float: left;
+}
+
+.nav-link{
+    font-family: 'Italiana', serif;
+    color: white;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+  color: #0b1612;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid black;
+  color: black;
+}
+
+.maincontainer{
+    position: relative;
+    width: 250px;
+    height: 320px;
+    margin-top: 800px;
+  
+  }
+  
+  .thecard{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    margin-left: 600px;
+    margin-top: -600px;
+  }
+  
+  .thecard:hover{
+    transform: rotateY(180deg);
+  }
+  
+  .thefront{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    backface-visibility: hidden;
+    background-image: url(assets/mattheo.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 25%;
+   
+    
+    color: #333;
+  }
+  
+  .theback{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    backface-visibility: hidden;
+    background-color: wheat;
+    color: #333;
+    transform: rotateY(180deg);
+    border-radius: 25%;
+    text-align: center;
+    padding: 25%;
+  }
+  
+  .maincontainer2{
+    position: relative;
+    width: 250px;
+    height: 320px;
+    
+  
+  }
+  
+  .thecard2{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    margin-left: 1100px ;
+    margin-top: -920px;
+  }
+  
+  .thecard2:hover{
+    transform: rotateY(180deg);
+  }
+  
+  .thefront2{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    backface-visibility: hidden;
+    background-image: url(assets/oliver-sjostrom-hFHXlAmRwzM-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 25%;
+    
+    color: #333;
+  }
+  
+  .theback2{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    backface-visibility: hidden;
+    background-color: wheat;
+    color: #333;
+    transform: rotateY(180deg);
+    border-radius: 25%;
+    text-align: center;
+    padding: 25%;
+
+  }
+
+  .maincontainer3{
+    position: relative;
+    width: 250px;
+    height: 320px;
+    
+  
+  }
+  
+  .thecard3{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+    margin-top: -1230px;
+    margin-left: 70px;
+    
+  }
+  
+  .thecard3:hover{
+    transform: rotateY(180deg);
+  }
+  
+  .thefront3{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    backface-visibility: hidden;
+    background-image: url(assets/jamie\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 25%;
+    color: #333;
+  }
+  
+  .theback3{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    backface-visibility: hidden;
+    background-color: wheat;
+    color: #333;
+    transform: rotateY(180deg);
+    border-radius: 25%;
+    text-align: center;
+    padding: 25%;
+
+  }
+  
+  
+  
+.all{
+    height: 100px;
+    width: 820px;
+    background-color: transparent;
+    border-radius: 5%;
+    margin-top: -890px;
+    margin-left: 300px;
+    float: left;
+    border: 2px solid wheat;
+    }
+  
+  .destinations h3{
+    font-family: 'Italiana', serif;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    margin-left: -500px;
+    font-weight: bold;
+  
+  }
+  
+  .destinations p{
+    font-family: 'Italiana', serif;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    margin-left: -500px;
+  }
+  
+  .guests h3{
+    font-family: 'Italiana', serif;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    margin-left: 300px;
+    margin-top: -90px;
+    font-weight: bold;
+  
+  }
+  
+  .guests p{
+    font-family: 'Italiana', serif;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    margin-left: 300px;
+  
+  }
+  
+  .dates h3{
+    font-family: 'Italiana', serif;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    margin-left: -100px;
+    margin-top: -97px;
+    font-weight: bold;
+  }
+  
+  .dates p{
+    font-family: 'Italiana', serif;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+    margin-left: -100px;
+    
+  }
+  
+  .search{
+    width: 120px;
+    height: 50px;
+    background-color: transparent;
+    
+    margin-left: 690px;
+    border-radius: 5%;
+    
+  }
+  .search p{
+    margin-left: -10px;
+    margin-top: -80px;
+    color: white;
+    width: 120px;
+    height: 50px;
+    background-color: black;
+  }
+  
+  .line1{
+    width: 2px;
+    height: 80px;
+    background-color: wheat;
+    margin-left: 260px;
+    margin-top: -70px;
+  }
+  
+  .line2{
+    width: 2px;
+    height: 80px;
+    background-color: wheat;
+    margin-left: 450px;
+    margin-top: -78px;
+  }
+
+  .container h2{
+    color: white;
+  }
+
+  .card {
+    /*border-radius: 150px 150px 12px 12px;*/
+    border: 3px solid #F3F3F3;
+    background-color: rgba(65, 22, 22, 0.367);
+    text-align: center;
+    height: 440px;
+    border: none;
+    color: white;
+    
+}
+
+.card-img-top {
+    width:auto;
+    height:320px;
+    margin: auto;
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1); 
+}
+
+.card-img-top.small {
+    height:200px;
+}
+
+.card-text {
+    color: wheat;
+}
+
+/* ---------------------------------------------------------------- */
+/* Home Page */
+
+.hero-image {
+    height: 90vh; 
+    position: relative;
+    bottom: -100px;
+}
+
+.side-kick{
+    height: 90vh; 
+    position: relative;
+    bottom: -100px;
+}
+
+.shape{
+    height: 550px;
+    width: 550px;
+    border-radius: 50%;
+    background-color: #18382B;
+    margin-top: -350px;
+}
+  
