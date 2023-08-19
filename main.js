@@ -2,30 +2,34 @@
 // Trips Array
 // ------------------------------------------------------------------------
 
-const liTrips = [
+const ArrTrips = [
   {
     name: "ASGARD",
     price: 3050,
     description: "Graceful and lush, this charming indoor plant boasts glossy, emerald-green leaves that effortlessly brighten any space.",
-    image: "Asgard.png",
-    tripType: "multi",
-    dates: "2023-04-12"
+    image: "ASGARD2.png",
+    tripType: "famous",
+    chooseDate: "2023-04-12",
+    place:"Europe"
+    
   },
   {
     name: "OLYMPUS",
     price: 2000,
     description: "Delicate and captivating, this rare succulent showcases a mesmerizing silver-white hue that gracefully adorns its petite, fleshy leaves.",
-    image: "Olympus.png",
+    image: "OLYMPUS2.png",
     tripType: "single",
-    dates: "2023-03-12"
+    chooseDate: "2023-03-12",
+    place:"Asia"
   },
   {
     name: "ELDORADO",
     price: 4000,
     description: "Boasting tall, sleek, and sword-like leaves, this botanical marvel adds a touch of modern flair to any setting.",
     image: "eldorado.png",
-    tripType: "famous",
-    dates: "2023-08-04"
+    tripType: "single",
+    chooseDate: "2023-08-04",
+    place:"Austria"
   },
   {
     name: "AVALON",
@@ -33,7 +37,8 @@ const liTrips = [
     description: "With its lush, feather-like fronds and compact size, this indoor beauty makes a striking addition to any interior space.",
     image: "avalon.png",
     tripType: "famous",
-    dates: "2023-05-12"
+    chooseDate: "2023-05-12",
+    place:"Australia"
   },
   
 {
@@ -42,8 +47,9 @@ const liTrips = [
   description: "Known for its stunning foliage that transforms with the seasons, this ornamental tree captivates with its delicate, lacy leaves in vibrant shades of red, orange, or gold.",
   image: "priderock.png",
   tripType: "famous",
-  dates: "2023-08-12"
-}
+  chooseDate: "2023-08-12",
+  place:"Africa"
+},
   
 
 ];
@@ -69,21 +75,21 @@ $(document).ready(function(){
     // ------------------------------------------------------------------
     // Browse
 
-    filterSortPlants();
+    filterSortTrips();
 
 });
 
 // ------------------------------------------------------------------------
-// Load all plants
+// Load all trips
 // ------------------------------------------------------------------------
 
 function loadTrips(tripsToShow) {
 
-  // Clear all elements inside the plants cards container
+  // Clear all elements inside the trips cards container
 
-  $("#plantsContainer").empty();
+  $("#tripsContainer").empty();
 
-  // Loop though plants
+  // Loop though trips
 
   for (let i = 0; i < tripsToShow.length; i++) {
     const trip = tripsToShow[i];
@@ -92,7 +98,7 @@ function loadTrips(tripsToShow) {
 
     $.ajax({
       type: "GET",
-      url: "https://api.openweathermap.org/data/2.5/weather?q=" + plant.origin + "&appid=0c8a911e5c7f8e5a03991afe2075de21",
+      url: "https://api.openweathermap.org/data/2.5/weather?q=" + trip.place + "&appid=0c8a911e5c7f8e5a03991afe2075de21",
       success: function (data) {
         tempData = data;
         console.log(tempData);
@@ -101,9 +107,9 @@ function loadTrips(tripsToShow) {
       //// Set Temperature
       //// Will give the result with a higher value
 
-      // $(currentChild).find("#nameText").text(tempData.main.temp);
+       //$(currentChild).find("#nameText").text(tempData.main.temp);
       
-      $(currentChild).find("#originTemp").text("Origin Temp: " + Math.round(tempData.main.temp- 273) + "°C");
+      $(currentChild).find("#placeTemp").text("Place Temp: " + Math.round(tempData.main.temp- 273) + "°C");
      
     
     });
@@ -122,7 +128,7 @@ function loadTrips(tripsToShow) {
 
     // 4: Hide the description text from the curent card
     $(currentChild).find("#descriptionText").hide();
-    $(currentChild).find("#originTemp").hide();
+    $(currentChild).find("#placeTemp").hide();
 
   };
 
@@ -146,7 +152,7 @@ $("input[name='sortRadio']").click(function(){
 
 function filterSortTrips() {
   
-  let filteredSortedliTrips = [];
+  let filteredSortedTrips = [];
 
   console.log(appliedFilter);
   console.log(appliedSort);
@@ -154,40 +160,40 @@ function filterSortTrips() {
   // Filter Plants
 
   if (appliedFilter) {
-    filteredSortedliTrips = liTrips.filter(trip => trip.tripType == appliedFilter);
+    filteredSortedTrips = ArrTrips.filter(trip => trip.tripType == appliedFilter);
   } else {
-    filteredSortedliTrips = liTrips;
+    filteredSortedTrips = ArrTrips;
   }
 
-  // Sort Plants
+  // Sort Trips
 
-  if (appliedSort == "Cheap") {
+  if (appliedSort === "Cheap") {
 
-    // Sort plants from the lowest to highest price
-    filteredSortedArrPlants = filteredSortedArrPlants.sort((a, b) => {
+    // Sort trips from the lowest to highest price
+    filteredSortedTrips = filteredSortedTrips.sort((a, b) => {
       return a.price - b.price;
     });
 
-  } else if (appliedSort == "single") {
+  } else if (appliedSort === "single") {
 
-    // Sort plants from the newest to oldest
-    filteredSortedliTrips = filteredSortedliTrips.sort((a, b) => {
-      let da = new Date(a.dates);
-      let db = new Date(b.dates);
+    // Sort trips from the newest to oldest
+    filteredSortedTrips = filteredSortedTrips.sort((a, b) => {
+      let da = new Date(a.chooseDate);
+      let db = new Date(b.chooseDate);
     
       return db - da;
     });
 
   }
 
-  console.log(filteredSortedliTrips)
+  console.log(filteredSortedTrips)
 
-  loadPlants(filteredSortedliTrips);
+  loadTrips(filteredSortedTrips);
 
 }
 
 // ------------------------------------------------------------------------
-// When a plant card is clicked
+// When a trip card is clicked
 // ------------------------------------------------------------------------
 
 $("#tripsContainer").on('click','.card', function() {
@@ -195,7 +201,7 @@ $("#tripsContainer").on('click','.card', function() {
   // Toggle the price & description text
   $(this).find("#priceText").toggle();
   $(this).find("#descriptionText").toggle();
-  $(this).find("#originTemp").toggle();
+  $(this).find("#placeTemp").toggle();
 
   // Resize the image to fit the additional content
   $(this).find(".card-img-top").toggleClass("small");
@@ -222,135 +228,6 @@ $("#tripsContainer").on('click','.card', function() {
 
 // })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ----------------------------------------------------------------
-// Trips Array
-// ----------------------------------------------------------------
-
-const trips = [
-    {
-      name: "ASGARD",
-      price: 3050,
-      description: "Graceful and lush, this charming indoor plant boasts glossy, emerald-green leaves that effortlessly brighten any space.",
-      image: "cristina.jpg",
-      li
-    },
-    {
-      name: "OLYMPUS",
-      price: 2000,
-      description: "Delicate and captivating, this rare succulent showcases a mesmerizing silver-white hue that gracefully adorns its petite, fleshy leaves.",
-      image: "daniel.jpg"
-    },
-    {
-      name: "ELDORADO",
-      price: 4000,
-      description: "Boasting tall, sleek, and sword-like leaves, this botanical marvel adds a touch of modern flair to any setting.",
-      image: "mike.jpg"
-    },
-    {
-      name: "AVALON",
-      price: 3500,
-      description: "With its lush, feather-like fronds and compact size, this indoor beauty makes a striking addition to any interior space.",
-      image: "obi.jpg"
-    },
-    
-	{
-		name: "PRIDE ROCK",
-		price: 5200,
-		description: "Known for its stunning foliage that transforms with the seasons, this ornamental tree captivates with its delicate, lacy leaves in vibrant shades of red, orange, or gold.",
-		image: "matthew-spiteri-WfZ4WCuNtlg-unsplash.jpg"
-	}
-		
-	
-  ];
-  
-  // ----------------------------------------------------------------
-  // When the document loads
-  // ----------------------------------------------------------------
-  
-  $(document).ready(function(){
-  
-      console.log("Welcome To ATLAS: Embarking on a mystical Journey");
-  
-      // -----------------------------------------
-      // Home Page
-  
-      // When the document loads, animate the hero image upwards
-      $(".hero-image").animate({top: '-=100px'});
-      $(".side-kick").animate({top: '-=100px'});
-  
-      // -----------------------------------------
-      // Browse Page
-  
-      loadTrips();
-  
-  }); 
-  
-  // ----------------------------------------------------------------
-  // Load all trips
-  // ----------------------------------------------------------------
-  
-  function loadTrips() {
-    for (let i = 0; i < trips.length; i++) {
-      const trip = trips[i];
-      $("#tripsContainer").append($("#tripCardTemplate").html());
-      let currentChild = $("#tripsContainer").children().eq(i + 1);
-      $(currentChild).find(".card-img-top").attr('src', 'assets/' + trip.image);
-      $(currentChild).find("#nameText").text(trip.name);
-      $(currentChild).find("#priceText").text('R' + trip.price);
-      $(currentChild).find("#descriptionText").text(trip.description);
-      $(currentChild).find("#descriptionText").hide();
-    }
-  }
-
-  $("#tripsContainer").on('click', '.card', function() {
-    $(this).find("#priceText").toggle();
-    $(this).find("#descriptionText").toggle();
-    $(this).find(".card-img-top").toggleClass("small");
-  });
-
-  
 
 
 (function($) { 

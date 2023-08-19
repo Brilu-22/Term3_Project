@@ -78,99 +78,77 @@
         
 
 
-        <div class="all">
-            <div class="destinations">
-            <h3>Destination</h3>
-            <p>Olymupus,Mount Zeus</p>
-            
-            </div>
         
-            <div class="dates">
-            <h3>Dates of Trip</h3>
-            <p>Add Dates</p>
+
+    <div class="container mt-5 pt-5">
+        <div class="things">
             
-            </div>
+                <!-- Header -->
+                <h1>Discover Trips</h1>
+                <p>"Embark on a wondrous journey with ATLAS and uncover the magical realms of fairytales, allowing you to traverse these worlds just as the noble rulers of those enchanting stories."</p>
+         
+                    <!-- ---------------------------------------------------------------------------------------------------- -->
+                <!-- Filters and Sorts -->
+
+                <div class="row align-items-center mt-4">
+
+                    <!-- Filter Radio Buttons -->
         
-            <div class="guests">
-            <h3>The Number OF Guests</h3>
-            <p>Add Guests</p>
+                    <div class="btn-group col-auto" role="group">
+                    <input type="radio" class="btn-check" name="filterRadio" id="allDestinationFilter" value="" autocomplete="off" checked>
+                    <label class="btn btn-outline-success" for="allDestinationFilter">Destinations</label>
+                    
+                    <input type="radio" class="btn-check" name="filterRadio" id="shortTripFilter" autocomplete="off" value="single">
+                    <label class="btn btn-outline-success" for="shortTripFilter"><i class="bi-brightness-high"></i>Single Trips</label>
+                    
+                    <input type="radio" class="btn-check" name="filterRadio" id="longTripFilter" autocomplete="off" value="famous">
+                    <label class="btn btn-outline-success" for="longTripFilter"><i class="bi-brightness-low"></i>Famous Trips</label>
+
+                    
+                    </div>
         
-            <div class="search">
-            <p>Search</p>
-            </div>
+                    <!-- Sorting Radio Buttons -->
         
-            <div class="line1"></div>
-            <div class="line2"></div>
-            
-        
-        </div>
+                    <div class="btn-group col-auto" role="group">
+                    <input type="radio" class="btn-check" name="sortRadio" id="defaultSort" value="single" autocomplete="off" checked>
+                    <label class="btn btn-outline-success" for="defaultSort"><i class="bi bi-calendar4">Short to Long</i></label>
 
-        <div class="container mt-5 pt-5">
-
-            <!-- Header -->
-            <h2>Discover Trips</h2>
-
-             <!-- ---------------------------------------------------------------------------------------------------- -->
-        <!-- Filters and Sorts -->
-
-        <div class="row align-items-center mt-4">
-
-            <!-- Filter Radio Buttons -->
-  
-            <div class="btn-group col-auto" role="group">
-              <input type="radio" class="btn-check" name="filterRadio" id="allDestinationFilter" value="" autocomplete="off" checked>
-              <label class="btn btn-outline-success" for="allDestinationFilter">Destinations</label>
-            
-              <input type="radio" class="btn-check" name="filterRadio" id="shortTripFilter" autocomplete="off" value="single">
-              <label class="btn btn-outline-success" for="shortTripFilter"><i class="bi-brightness-high"></i>Single Trips</label>
-            
-              <input type="radio" class="btn-check" name="filterRadio" id="longTripFilter" autocomplete="off" value="long">
-              <label class="btn btn-outline-success" for="longTripFilter"><i class="bi-brightness-low"></i>Famous Trips</label>
-
-              <input type="radio" class="btn-check" name="filterRadio" id="multiTripFilter" autocomplete="off" value="multi">
-              <label class="btn btn-outline-success" for="multiTripFilter"><i class="bi-brightness-low"></i>Multi.des</label>
-            </div>
-  
-            <!-- Sorting Radio Buttons -->
-  
-            <div class="btn-group col-auto" role="group">
-              <input type="radio" class="btn-check" name="sortRadio" id="defaultSort" value="single" autocomplete="off" checked>
-              <label class="btn btn-outline-secondary" for="single"><i class="bi bi-calendar4">Shortest to longest</i></label>
-
-             
-            
-              <input type="radio" class="btn-check" name="sortRadio" id="priceSort" value="Cheap" autocomplete="off">
-              <label class="btn btn-outline-secondary" for="Cheap"><i class="bi bi-sort-down-alt"></i>Row Boat Special</label>
-            </div>
-          </div>
-  
-          <!-- ---------------------------------------------------------------------------------------------------- -->
-
-            <!-- trips List Cards -->
-            <div class="row py-5 gy-3" id="tripsContainer">
-
-                <!-- Browse Card Template * Won't display by default * -->
-                
-
-            </div>
-        </div>
-    </div>
-
-    <template id="tripCardTemplate">
-        <div class="col-4">
-
-            <!-- Card -->
-            <div class="card">
-                <img src="assets/jamie (1).jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                <h4 class="card-title" id="nameText">ASGARD</h4>
-                <p class="card-text" id="priceText">R320</p>
-                <p class="card-text mt-4" id="descriptionText">Graceful and lush, this charming indoor plant boasts glossy, emerald-green leaves that effortlessly brighten any space. Easy to care for and standing at an ideal height, our Ficus Tree is the perfect addition to elevate your interior décor.</p>
+                    
+                    
+                    <input type="radio" class="btn-check" name="sortRadio" id="priceSort" value="Cheap" autocomplete="off">
+                    <label class="btn btn-outline-success" for="priceSort"><i class=""></i>Row Boat Special</label>
+                    </div>
                 </div>
-            </div>
-        </div>
-        </template>
         
+                <!-- ---------------------------------------------------------------------------------------------------- -->
+
+                    <!-- trips List Cards -->
+                    <div class="row py-5 gy-3" id="tripsContainer">
+
+                        <!-- Browse Card Template * Won't display by default * -->
+                        
+
+                    </div>
+                
+            </div>
+
+            <template id="tripCardTemplate">
+                <div class="col-4">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <img src="assets/jamie (1).jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h4 class="card-title" id="nameText">ASGARD</h4>
+                        <p class="card-text" id="priceText">R320</p>
+
+                        <p class="card-text mt-4" id="placeTemp"></p>
+                        <p class="card-text mt-4" id="descriptionText">Graceful and lush, this charming indoor plant boasts glossy, emerald-green leaves that effortlessly brighten any space. Easy to care for and standing at an ideal height, our Ficus Tree is the perfect addition to elevate your interior décor.</p>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>        
 
         <!-- Javascript -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

@@ -48,23 +48,17 @@
 
         <div id="carouselExample" class="carousel carousel-dark slide">
           <div class="carousel-inner">
-          <!-- Slide 1 -->
+            <!-- Slide 1 -->
             <div class="carousel-item active">
                 <div class="container">
                     <div class="row full-height">
                         <div class="col align-self-center">
                             <h1>ATL</h1>
                             <h1>AS</h1>
-                            
+                            <p>Discover the World and Travel beyond your dreams in Luxury</p>
                             <!--<button class="mt-4">Browse Cruises</button>-->
                         </div>
-                        <div class="press">
-                          <h3>"Embark on a wondrous journey with ATLAS and uncover the magical realms of fairytales, allowing you to traverse these worlds just as the noble rulers of those enchanting stories." </h3>
-                          <!--<p>Browse Trips</p>-->
-                          <a class="nav-link" href="browse.html">Browse Trips</a>
-                          <div class="line3"></div>
-
-                        </div>
+                        
                         
                          <div class="col align-self-end">
                               <div class="box">
@@ -347,46 +341,57 @@
                       </div>
                   </div>
               </div>
-              
-             
-        </div>
-          
-          <!-- Slide 2--> 
-        <div class="carousel-item full-height">
-          <div class="container">
-            <div class="row full-height">
-              <div class="end">
-         
-              </div>
-              <div class="center">
-                <p>"Indulge in a truly opulent travel experience, reminiscent of royalty. Embark on a captivating journey through enchanting realms that have until now only existed within the pages of fairytales. Our itinerary takes us on a delightful sojourn, beginning with a morning at Olympus, where we savor a sumptuous breakfast. The afternoon unfolds against the breathtaking backdrop of Avalon, where we immerse ourselves in its wondrous sights. As the day gently fades, we culminate our adventure with an exquisite candlelit dinner in the majestic realm of Asgard."</p>
-                <button class="mt-4">Browse Trips</button>
-                
-               
-              </div>
-            </div>
-          </div>
-          <p></p>
-        </div>
-  
-        </div>
+              <!-- Slide 2 -->
+            <div class="carousel-item full-height">
+                  <!-- ---------------------------------------------------------------------------------------------------- -->
 
-         <!-- Carousel Controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
+            <!-- trips List Cards -->
+            <div class="row py-5 gy-3" id="tripsContainer">
+
+              <!-- Browse Card Template * Won't display by default * -->
+              
+
+          </div>
+      
+  </div>
+
+  <template id="tripCardTemplate">
+      <div class="col-4 col-container">
+
+          <!-- Card -->
+          <div class="card">
+              <img src="assets/jamie (1).jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+              <h4 class="card-title" id="nameText">ASGARD</h4>
+              <p class="card-text" id="priceText">R320</p>
+
+              <p class="card-text mt-4" id="placeTemp"></p>
+              <p class="card-text mt-4" id="descriptionText">Graceful and lush, this charming indoor plant boasts glossy, emerald-green leaves that effortlessly brighten any space. Easy to care for and standing at an ideal height, our Ficus Tree is the perfect addition to elevate your interior décor.</p>
+              </div>
+          </div>
+      </div>
+  </template>
+            </div>      
+              
+          </div>
+          
+       
+        <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <script src="carousel.js"></script>
 
   </body>
 </html>

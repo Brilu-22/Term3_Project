@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Dancing+Script&family=Italiana&family=Roboto:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Dancing+Script&family=Italiana&family=Roboto:ital,wght@1,500&display=swap');
 
 /* ---------------------------------------- */
 /* Global Styles */
 h1,h2,h3,h4,h5,h6{
     font-family: 'Italiana', serif;
+    font-family: 'Abril Fatface', cursive;
 }
 
 p{
@@ -25,13 +28,13 @@ p{
 }
 
 .nav-link.active {
-  border-bottom: 2px solid #18382B;
-  color: #18382B;
+  border-bottom: 2px solid whitesmoke;
+  color: white;
 }
 
 body{
     height: 100%;
-    background-image: url(assets/nazar-haponov-ajb26vfpzdU-unsplash.jpg);
+    background-image: url(assets/ibrahim-mushan-nzPzTkwl5VI-unsplash.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -71,7 +74,7 @@ body{
   left: 24px;
   bottom: 24px;
   width: auto;
-  background-color: black;
+  background-color: wheat;
   padding: 12px;
   border-radius: 50%;
 }
@@ -106,19 +109,49 @@ body{
 }
 
 .align-self-center,p{
-  font-size: 30px;
+  font-size: 100px;
   font-family: 'Italiana', serif;
-  color: black;
+  color: wheat;
+  margin-left: -100px;
 }
 
 .press{
-  width: 400px;
-  height: 300px;
-  font-weight: bold;
-  color: wheat;
-  margin-top: 200px;
-  margin-left: -990px;
+  font-family: 'Abril Fatface', cursive;
 }
+
+.card {
+  border-radius: 150px 150px 12px 12px;
+  background: rgba(245, 222, 179, 0.648);
+  text-align: center;
+  height: 440px;
+  border: none;
+    
+}
+
+
+
+.card-img-top {
+  width:auto;
+  height:320px;
+  margin: auto;
+  transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1); 
+}
+
+.card-img-top.small {
+  height:200px;
+}
+
+.card-text {
+  color:#18382B;
+    font-weight: bold;
+}
+
+.col-container{
+  margin-top: 150px;
+}
+
+
+
 
 .line3{
   width: 100px;

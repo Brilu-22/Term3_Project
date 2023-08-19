@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Dancing+Script&family=Italiana&family=Roboto:ital,wght@1,500&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
 
 /* ---------------------------------------- */
 /* Global Styles */
 h1,h2,h3,h4,h5,h6{
     font-family: 'Italiana', serif;
+    font-family: 'Abril Fatface', cursive;
 }
 
 p{
@@ -24,7 +26,7 @@ p{
 
 body{
     height: 100%;
-    background-image: url(assets/nikldn-t-6GW8T6Jsc-unsplash.jpg);
+    background-image: url(assets/ibrahim-mushan-nzPzTkwl5VI-unsplash.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -198,130 +200,26 @@ body{
   
   
   
-.all{
-    height: 100px;
-    width: 820px;
-    background-color: wheat;
-    border-radius: 2%;
-    margin-top: -890px;
-    margin-left: 300px;
-    float: left;
-    border: 2px solid wheat;
-    }
-  
-  .destinations h3{
-    font-family: 'Italiana', serif;
-    color: black;
-    text-align: center;
-    padding: 5px;
-    font-size: 20px;
-    margin-left: -500px;
-    font-weight: bold;
-  
-  }
-  
-  .destinations p{
-    font-family: 'Italiana', serif;
-    color: black;
-    text-align: center;
-    padding: 5px;
-    font-size: 20px;
-    margin-left: -500px;
-  }
-  
-  .guests h3{
-    font-family: 'Italiana', serif;
-    color: black;
-    text-align: center;
-    padding: 5px;
-    font-size: 20px;
-    margin-left: 300px;
-    margin-top: -90px;
-    font-weight: bold;
-  
-  }
-  
-  .guests p{
-    font-family: 'Italiana', serif;
-    color: black;
-    text-align: center;
-    padding: 5px;
-    font-size: 20px;
-    margin-left: 300px;
-  
-  }
-  
-  .dates h3{
-    font-family: 'Italiana', serif;
-    color: black;
-    text-align: center;
-    padding: 5px;
-    font-size: 20px;
-    margin-left: -100px;
-    margin-top: -97px;
-    font-weight: bold;
-  }
-  
-  .dates p{
-    font-family: 'Italiana', serif;
-    color: black;
-    text-align: center;
-    padding: 5px;
-    font-size: 20px;
-    margin-left: -100px;
-    
-  }
-  
-  .search{
-    width: 120px;
-    height: 50px;
-    background-color: transparent;
-    
-    margin-left: 690px;
-    border-radius: 5%;
-    
-  }
-  .search p{
-    margin-left: -10px;
-    margin-top: -80px;
-    color: white;
-    width: 120px;
-    height: 50px;
-    background-color: black;
-  }
-  
-  .line1{
-    width: 2px;
-    height: 80px;
-    background-color: black;
-    margin-left: 260px;
-    margin-top: -70px;
-  }
-  
-  .line2{
-    width: 2px;
-    height: 80px;
-    background-color: black;
-    margin-left: 450px;
-    margin-top: -78px;
-  }
+.things{
+  margin-top: -960px;
+  color: wheat;
+  text-align: center;
+}
 
-  .container h2{
-    color: white;
-  }
 
-  .card {
-    border-radius: 150px 150px 12px 12px;
-    border: 3px solid #F3F3F3;
-    background-color: #F3F3F3;
-    text-align: center;
-    height: 440px;
-    width: 300px;
-    margin-left: 200px;
-    border: none;
-    color: white;
+
+
+
+.card {
+  border-radius: 150px 150px 12px 12px;
+  background: #F3F3F3;
+  text-align: center;
+  height: 440px;
+  border: none;
     
 }
+
+
 
 .card-img-top {
     width:auto;
