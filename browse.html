@@ -110,28 +110,66 @@
             <!-- Header -->
             <h2>Discover Trips</h2>
 
+             <!-- ---------------------------------------------------------------------------------------------------- -->
+        <!-- Filters and Sorts -->
+
+        <div class="row align-items-center mt-4">
+
+            <!-- Filter Radio Buttons -->
+  
+            <div class="btn-group col-auto" role="group">
+              <input type="radio" class="btn-check" name="filterRadio" id="allDestinationFilter" value="" autocomplete="off" checked>
+              <label class="btn btn-outline-success" for="allDestinationFilter">Destinations</label>
+            
+              <input type="radio" class="btn-check" name="filterRadio" id="shortTripFilter" autocomplete="off" value="single">
+              <label class="btn btn-outline-success" for="shortTripFilter"><i class="bi-brightness-high"></i>Single Trips</label>
+            
+              <input type="radio" class="btn-check" name="filterRadio" id="longTripFilter" autocomplete="off" value="long">
+              <label class="btn btn-outline-success" for="longTripFilter"><i class="bi-brightness-low"></i>Famous Trips</label>
+
+              <input type="radio" class="btn-check" name="filterRadio" id="multiTripFilter" autocomplete="off" value="multi">
+              <label class="btn btn-outline-success" for="multiTripFilter"><i class="bi-brightness-low"></i>Multi.des</label>
+            </div>
+  
+            <!-- Sorting Radio Buttons -->
+  
+            <div class="btn-group col-auto" role="group">
+              <input type="radio" class="btn-check" name="sortRadio" id="defaultSort" value="single" autocomplete="off" checked>
+              <label class="btn btn-outline-secondary" for="single"><i class="bi bi-calendar4">Shortest to longest</i></label>
+
+             
+            
+              <input type="radio" class="btn-check" name="sortRadio" id="priceSort" value="Cheap" autocomplete="off">
+              <label class="btn btn-outline-secondary" for="Cheap"><i class="bi bi-sort-down-alt"></i>Row Boat Special</label>
+            </div>
+          </div>
+  
+          <!-- ---------------------------------------------------------------------------------------------------- -->
+
             <!-- trips List Cards -->
             <div class="row py-5 gy-3" id="tripsContainer">
 
                 <!-- Browse Card Template * Won't display by default * -->
-                <template id="tripCardTemplate">
-                <div class="col-4">
-
-                    <!-- Card -->
-                    <div class="card">
-                        <img src="assets/jamie (1).jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                        <h4 class="card-title" id="nameText">ASGARD</h4>
-                        <p class="card-text" id="priceText">R320</p>
-                        <p class="card-text mt-4" id="descriptionText">Graceful and lush, this charming indoor plant boasts glossy, emerald-green leaves that effortlessly brighten any space. Easy to care for and standing at an ideal height, our Ficus Tree is the perfect addition to elevate your interior décor.</p>
-                        </div>
-                    </div>
-                </div>
-                </template>
+                
 
             </div>
         </div>
     </div>
+
+    <template id="tripCardTemplate">
+        <div class="col-4">
+
+            <!-- Card -->
+            <div class="card">
+                <img src="assets/jamie (1).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h4 class="card-title" id="nameText">ASGARD</h4>
+                <p class="card-text" id="priceText">R320</p>
+                <p class="card-text mt-4" id="descriptionText">Graceful and lush, this charming indoor plant boasts glossy, emerald-green leaves that effortlessly brighten any space. Easy to care for and standing at an ideal height, our Ficus Tree is the perfect addition to elevate your interior décor.</p>
+                </div>
+            </div>
+        </div>
+        </template>
         
 
         <!-- Javascript -->

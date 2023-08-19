@@ -31,14 +31,14 @@ p{
 
 body{
     height: 100%;
-    background-image: url(assets/mohamed-masaau-nfF5-G6cFwY-unsplash.jpg);
+    background-image: url(assets/nazar-haponov-ajb26vfpzdU-unsplash.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .box{
-  background-image: url(assets/nathan-dumlao-OHzkfrv9Ycw-unsplash.jpg);
+  background: transparent;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
