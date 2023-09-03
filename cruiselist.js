@@ -1,75 +1,75 @@
 const data= [
   {
       id : 0,
-      img : '/assets/ASGARD2.png',
-      name : 'Redmi K20',
-      price : 190,
+      img : '/assets/camel.png',
+      name : 'SHAMBALA',
+      price : 2000,
       save : 25,
-      delievery : 'In 3 - 4 days',
-      itemInCart: false
+      Duration : '6 days',
+      TicketInCart: false
   },
   {
       id : 1,
-      img : '/assets/building.png',
-      name : 'Samsung Galaxy Note 20',
-      price : 300,
+      img : '/assets/elephant.png',
+      name : 'SIMBA WORLD',
+      price : 3500,
       save : 50,
-      delievery : 'In 3 - 4 days',
-      itemInCart: false
+      Duration : '8 days',
+      TicketInCart: false
   },
   {
       id : 2,
-      img : '/assets/eldorado.png',
-      name : 'OPPO Find X2',
-      price : 240,
+      img : '/assets/priderock.png',
+      name : 'PRIDE ROCK',
+      price : 5000,
       save : 30,
-      delievery : 'In 3 - 4 days',
-      itemInCart: false
+      Duration : '10 days',
+      TicketInCart: false
   },
   {
       id : 3,
-      img : '/assets/avalon.png',
-      name : 'Realme X50 Pro',
-      price : 285,
+      img : '/assets/palace.png',
+      name : 'ARABIAN DESERT KINGDOM',
+      price : 4100,
       save : 35,
-      delievery : 'In 3 - 4 days',
-      itemInCart: false
+      Duration : '6 days',
+      TicketInCart: false
   },
   {
       id : 4,
       img : '/assets/mountain.png',
-      name : 'Redmi Note 8',
-      price : 200,
+      name : 'BLUE HILLS',
+      price : 3400,
       save : 15,
-      delievery : 'In 3 - 4 days',
-      itemInCart: false
+      Duration : '8 days',
+      TicketInCart: false
   },
   {
       id : 5,
       img : '/assets/OLYMPUS2.png',
-      name : 'Redmi Note 9',
-      price : 220,
+      name : 'OLYMPUS',
+      price : 2100,
       save : 25,
-      delievery : 'In 3 - 4 days',
-      itemInCart: false
+      Duration : '9 days',
+      TicketInCart: false
   },
   {
       id : 6,
       img : '/assets/Olympus.png',
-      name : 'Redmi 8A Dual',
-      price : 160,
+      name : 'ATLANTIS',
+      price : 4330,
       save : 20,
-      delievery : 'In 3 - 4 days',
-      itemInCart: false
+      Duration : '4 days',
+      iTicketInCart: false
   },
   {
       id : 7,
       img : '/assets/big building.png',
-      name : 'Redmi 9',
-      price : 100,
+      name : 'SEYCELLES',
+      price : 3000,
       save : 10,
-      delievery : 'In 3 - 4 days',
-      itemInCart: false
+      Duration : '8 days',
+      TicketInCart: false
   },
 ];
 
@@ -125,13 +125,13 @@ function handleDetail(e){
   getId= this.parentNode.id;
   detailsImg.src= data[getId].img;
   detailTitle.innerHTML=   data[getId].name;
-  detailPrice.innerHTML= 'Price : $ ' +data[getId].price;
-  youSave.innerHTML= 'You save : ($ ' + data[getId].save + ')';
+  detailPrice.innerHTML= 'Price : R ' +data[getId].price;
+  youSave.innerHTML= 'You save : (R ' + data[getId].save + ')';
 }
 
 // add item to the cart
 function addToCart(id) {
-  if(!data[id].itemInCart){
+  if(!data[id].TicketInCart){
       cartList= [...cartList,data[id]];
       addItem()
       
@@ -141,7 +141,7 @@ function addToCart(id) {
   else{
       alert('your item is already there')
   }
-  data[id].itemInCart= true
+  data[id].TicketInCart= true
 }
 
 //back to main page
@@ -222,15 +222,15 @@ function addItem(){
           cartCont.appendChild(tempCart)
           
       })
-      document.getElementById('total-amount').innerHTML = 'Total Amount : $ ' + totalAmount;
-      document.getElementById('total-items').innerHTML = 'Total Items : ' + totalItems;
-      document.getElementById('you-saved').innerHTML = 'You Saved : $ ' + totalSaving;
+      document.getElementById('total-amount').innerHTML = 'Total Amount : R ' + totalAmount;
+      document.getElementById('total-Ticket').innerHTML = 'Total Ticket : ' + totalItems;
+      document.getElementById('you-saved').innerHTML = 'You Saved : R ' + totalSaving;
       document.getElementById('total').style.display= "block";
 }
 
 //remove item from the cart
 function removeFromCart(itemId){
-  data[itemId].itemInCart = false
+  data[itemId].TicketInCart = false
   cartList = cartList.filter((list)=>list.id!=itemId);
   addItem()
   if(cartList.length==0){

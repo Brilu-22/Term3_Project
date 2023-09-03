@@ -160,7 +160,7 @@ body{
     auto auto ;
     grid-gap: 5px;
     text-align: center;
-    background: rgba(245, 222, 179, 0.648);
+    background: rgba(222, 184, 135, 0.378);
     height: 260px;
   
    
@@ -192,6 +192,7 @@ body{
 #item-name{
     text-align: left;
     color: #18382B;
+    font-weight: bold;
     margin-top: 1rem;
     font-size: 0.95rem;
 }
@@ -315,7 +316,7 @@ footer{
 }
 #detail-price{
     margin-top: 1.5rem;
-    color:wheat;
+    color: #18382B;
     font-size: 1.5rem;
 }
 #you-save{
@@ -372,13 +373,14 @@ footer{
     font-size: 3.5rem;
     text-align: center;
     font-family: sans-serif;
-    color: #18382b9a;
+    color:wheat;
 }
 #empty-cart{
     display: none;
     margin-top: 4rem;
     text-align: center;
     font-size: larger;
+    color: black;
 }
 
 #cart-with-items{
@@ -421,8 +423,27 @@ footer{
     margin-bottom: 1.5rem;
 }
 #you-saved{
-    color: rgb(101, 99, 102);
+    color: black;
 }
+
+a.Checkout {
+    display: inline-block;
+    background-color:black;
+    color: #fff;
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none; 
+    cursor: pointer; 
+    margin-left: 700px;
+    margin-top: 100px;
+}
+
+a.Checkout:hover {
+    background-color: green;
+}
+
 
 /* media queries for responsive view */
 @media only screen and (min-width : 800px){
