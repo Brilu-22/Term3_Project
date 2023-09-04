@@ -2,7 +2,7 @@
 
 ![ATLASLogo](/assets/Screenshot%202023-08-09%20222513.png)
 
-[Watch Demo](https://youtu.be/FyloCdIUk10)
+[Watch Demo >](https://youtu.be/FyloCdIUk10)
 
 ## Table of Contents
 * About the Project 
